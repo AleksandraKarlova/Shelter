@@ -77,11 +77,9 @@ a {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 .main {
@@ -125,16 +123,16 @@ h1 {
   text-decoration: none;
 }
 
-.section {
-  padding: 0 40px;
-}
-
 .start-section {
-  display: flex;
-  min-height: 908px;
   background: url("../../assets/images/start-screen-gradient-background.jpg");
   background-size: cover;
   justify-content: space-between;
+}
+
+.start-section-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 908px;
 }
 
 .start-section h2 {
@@ -188,6 +186,7 @@ h1 {
   display: flex;
   padding: 80px 175px 100px;
   justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -254,4 +253,45 @@ h2 {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--color-dark-l);
+}
+
+.donation-section {
+  background: var(--color-light-l);
+}
+
+.donation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 80px 142px 100px;
+}
+
+.donation-content {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  gap: 20px;
+}
+
+.donation-content h2 {
+  width: 300px;
+}
+
+.bank-info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+}
+
+.legal-info {
+  font-family: var(--second-family);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-dark-m);
 }
