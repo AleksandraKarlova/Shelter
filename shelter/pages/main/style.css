@@ -43,6 +43,10 @@ html {
   padding: 0;
 }
 
+button {
+  border: none;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -309,6 +313,7 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  gap: 156px;
 }
 
 footer h2 {
@@ -318,4 +323,23 @@ footer h2 {
   line-height: 1.3;
   letter-spacing: 0.06em;
   color: var(--color-light-xl);
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+}
+
+.address-container {
+  flex-shrink: 0;
+  width: 302px;
 }
