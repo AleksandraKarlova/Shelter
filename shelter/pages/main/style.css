@@ -54,7 +54,7 @@ body {
 
   font-family: var(--font-family);
   font-size: 16px;
-  line-height: 160%;
+  line-height: 1.6;
 
   color: var(--color-dark-xl);
 }
@@ -98,7 +98,7 @@ a {
 h1 {
   font-family: var(--font-family);
   font-size: 32px;
-  line-height: 110%;
+  line-height: 1.1;
   letter-spacing: 0.06em;
   color: var(--color-primary);
   font-weight: 400;
@@ -128,7 +128,7 @@ h1 {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 15px;
-  line-height: 160%;
+  line-height: 1.6;
   color: var(--color-dark-s);
 
   text-decoration: none;
@@ -172,7 +172,7 @@ h1 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 44px;
-  line-height: 130%;
+  line-height: 1.3;
   color: var(--color-light-xl);
 }
 
@@ -180,7 +180,7 @@ h1 {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 15px;
-  line-height: 160%;
+  line-height: 1.6;
   color: var(--color-dark-s);
 }
 
@@ -246,7 +246,7 @@ h2 {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 15px;
-  line-height: 160%;
+  line-height: 1.6;
   color: var(--color-dark-xl);
 }
 
@@ -280,7 +280,7 @@ h2 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
-  line-height: 115%;
+  line-height: 1.15;
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--color-dark-l);
@@ -357,7 +357,7 @@ footer h2 {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
-  line-height: 115%;
+  line-height: 1.15;
   letter-spacing: 0.06em;
   color: var(--color-primary);
 }
@@ -365,4 +365,24 @@ footer h2 {
 .address-container {
   flex-shrink: 0;
   width: 302px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  border-radius: 9px;
+  padding: 10px 15px;
+  width: 349px;
+  white-space: nowrap;
+
+  background: var(--color-primary);
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
 }
