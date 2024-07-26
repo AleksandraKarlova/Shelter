@@ -1,7 +1,7 @@
 footer {
   background: url("../assets/images/start-screen-gradient-background.jpg");
   background-size: cover;
-  padding-top: 40px;
+  padding-top: 56px;
 }
 
 .footer-container {
@@ -36,24 +36,5 @@ footer h2 {
 .address-container {
   flex-shrink: 0;
   width: 302px;
-}
-
-.input-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-
-  border-radius: 9px;
-  padding: 10px 15px;
-  width: 349px;
-  white-space: nowrap;
-
-  background: var(--color-primary);
-
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.06em;
-  color: var(--color-dark-l);
+  gap: 34px;
 }
