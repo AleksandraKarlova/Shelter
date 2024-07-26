@@ -1,0 +1,27 @@
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 9px;
+  padding-bottom: 30px;
+  width: 270px;
+  height: 435px;
+
+  background: var(--color-light-s);
+  transition: all 0.25s ease;
+}
+
+.pet-card:hover {
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+  cursor: pointer;
+}
+
+.pet-card p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--color-dark-l);
+}

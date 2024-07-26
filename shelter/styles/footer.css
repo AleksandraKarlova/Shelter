@@ -1,0 +1,59 @@
+footer {
+  background: url("../assets/images/start-screen-gradient-background.jpg");
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 156px;
+}
+
+footer h2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  color: var(--color-light-xl);
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+}
+
+.address-container {
+  flex-shrink: 0;
+  width: 302px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  border-radius: 9px;
+  padding: 10px 15px;
+  width: 349px;
+  white-space: nowrap;
+
+  background: var(--color-primary);
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+}

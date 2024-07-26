@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../styles/common.css">
+  <link rel="stylesheet" href="../../styles/header.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../../styles/button.css">
+  <link rel="stylesheet" href="../../styles/pet-card.css">
+  <link rel="stylesheet" href="../../styles/footer.css">
   <link rel="icon" href="../../assets/icons/favicon.ico">
   <link 
     href="https://fonts.googleapis.com/css?family=Inter:regular" 
@@ -24,7 +28,7 @@
             <a href="#about" class="nav-link nav-link-active">About the shelter</a>
           </li>
           <li class="nav-item">
-            <a href="#pets" class="nav-link">Our pets</a>
+            <a href="../pets/index.html" class="nav-link">Our pets</a>
           </li>
           <li class="nav-item">
             <a href="#help" class="nav-link">Help the shelter</a>
@@ -65,24 +69,24 @@
           <div class="pets-container">
             <h2 class="section-title">Our friends who <br> are looking for a house</h2>
             <div class="pets-carousel">
-              <button disabled type="button" class="button-round button-outlined">
+              <button type="button" class="button-round button-outlined">
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="currentColor" />
                 </svg>
               </button>
               <div class="carousel-content">
                 <div class="carousel-track">
-                  <div class="carousel-item">
+                  <div class="pet-card">
                     <img src="../../assets/images/pets-katrine.png" alt="katrine">
                     <p>Katrine</p>
                     <button type="button" class="button button-outlined">Learn more</button>
                   </div>
-                  <div class="carousel-item">
+                  <div class="pet-card">
                     <img src="../../assets/images/pets-jennifer.png" alt="jennifer">
                     <p>Jennifer</p>
                     <button type="button" class="button button-outlined">Learn more</button>
                   </div>
-                  <div class="carousel-item">
+                  <div class="pet-card">
                     <img src="../../assets/images/pets-woody.png" alt="woody">
                     <p>Woody</p>
                     <button type="button" class="button button-outlined">Learn more</button>
@@ -95,7 +99,7 @@
                 </svg>
               </button>
             </div>
-            <button type="button" class="button button-solid">Get to know the rest</button>
+            <a href="../pets/index.html" class="button button-solid">Get to know the rest</a>
           </div>
         </div>
       </section>
