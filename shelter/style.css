@@ -1,5 +1,5 @@
 .header {
-  background: url("../../assets/images/start-screen-gradient-background.jpg"); 
+  background: url("assets/images/start-screen-gradient-background.jpg"); 
   background-size: cover;
 }
 
@@ -20,7 +20,7 @@ h1 {
 }
 
 .start-section {
-  background: url("../../assets/images/start-screen-gradient-background.jpg");
+  background: url("assets/images/start-screen-gradient-background.jpg");
   background-size: cover;
   justify-content: space-between;
 }
