@@ -17,6 +17,11 @@
   cursor: pointer;
 }
 
+.pet-card:hover .button-outlined {
+  background: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
 .pet-card p {
   font-family: var(--font-family);
   font-weight: 400;

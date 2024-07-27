@@ -52,8 +52,13 @@ button {
   border-color: var(--color-primary-light);
 }
 
+.button-round-active {
+  pointer-events: none;
+}
+
 .button-round:disabled {
   background: none;
   border: 2px solid var(--color-dark-s);
   color: var(--color-dark-s);
+  pointer-events: none;
 }

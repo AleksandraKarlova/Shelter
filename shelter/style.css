@@ -38,6 +38,7 @@ h1 {
   font-weight: 400;
   font-size: 44px;
   line-height: 1.3;
+  letter-spacing: 0.004em;
   color: var(--color-light-xl);
   white-space: nowrap;
 }
