@@ -22,13 +22,19 @@ h1 {
 .start-section {
   background: url("assets/images/start-screen-gradient-background.jpg");
   background-size: cover;
-  justify-content: space-between;
 }
 
 .start-section-container {
   display: flex;
   justify-content: space-between;
   min-height: 908px;
+}
+
+.start-section-container img {
+  width: 100%;
+  max-width: 698px;
+  max-height: 728px;
+  object-fit: contain;
 }
 
 .start-section h2 {
@@ -71,8 +77,13 @@ h1 {
 
 }
 
+img.about-content {
+  max-width: 300px;
+  max-height: 408px;
+}
+
 div.about-content {
-  width: 430px;
+  max-width: 430px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -89,7 +100,7 @@ h2 {
 }
 
 .about-content h2 {
-  width: 370px;
+  max-width: 370px;
 }
 
 .about-content p {
@@ -121,6 +132,11 @@ h2 {
   justify-content: space-between;
   align-items: center;
   gap: 53px;
+  width: 100%;
+}
+
+.pets-carousel button {
+  flex-shrink: 0;
 }
 
 .carousel-track {
@@ -175,19 +191,25 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   padding: 80px 142px 100px;
+}
+
+.donation-img {
+  max-width: 505px;
+  max-height: 261px;
 }
 
 .donation-content {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  max-width: 380px;
   gap: 20px;
 }
 
 .donation-content h2 {
-  width: 300px;
+  max-width: 300px;
 }
 
 .bank-info {
@@ -215,7 +237,7 @@ h2 {
 
   border-radius: 9px;
   padding: 10px 15px;
-  width: 349px;
+  max-width: 349px;
   white-space: nowrap;
 
   background: var(--color-primary);
@@ -226,4 +248,156 @@ h2 {
   line-height: 1.15;
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
+}
+
+@media screen and (max-width: 768px) {
+  .start-section h2 {
+    margin-top: 150px;
+  }
+
+  .start-section-container {
+    flex-direction: column;
+    align-items: center;
+    max-height: 1165px;
+    gap: 100px;
+  }
+
+  .start-section-container img {
+    max-width: 569px;
+    max-height: 593px;
+  }
+
+  .start-section-content a {
+    align-self: center;
+  }
+
+  .about-container {
+    flex-direction: column-reverse;
+    padding: 80px 165px 100px;
+    gap: 80px;
+  }
+
+  .pets-carousel {
+    gap: 12px;
+  }
+
+  .carousel-content {
+    width: 580px;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    gap: 40px;
+  }
+
+  .help-container {
+    padding: 80px 29px 100px;
+  }
+
+  .help-items-list {
+    column-gap: 55px;
+    row-gap: 60px;
+    justify-content: space-between;
+  }
+
+  .help-item {
+    width: 170px;
+  }
+
+  .donation-container {
+    flex-direction: column-reverse;
+    padding: 80px 92px 100px 101px;
+    gap: 60px;
+  }
+
+  .donation-content {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .start-section-container {
+    max-width: 823px;
+    gap: 105px;
+  }
+
+  .start-section-content {
+    align-items: center;
+  }
+
+  .start-section-content h2 {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .start-section-content p {
+    text-align: center;
+  }
+
+  .about-container {
+    padding: 42px 0;
+  }
+
+  .about-content p {
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .help-container {
+    padding: 42px 5px;
+  }
+
+  .help-items-list {
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: space-between;
+  }
+
+  .help-item {
+    width: 130px;
+  }
+
+  .help-item p {
+    font-size: 15px;
+    line-height: 1.1em;
+    text-align: center;
+  }
+
+  .donation-container {
+    padding: 42px 10px;
+    gap: 42px;
+  }
+
+  .donation-content {
+    align-items: center;
+  }
+
+  .donation-img {
+    max-width: 260px;
+    max-height: 135px;
+  }
+
+  p.bank-info {
+    line-height: 1.6em;
+    white-space: nowrap;
+    letter-spacing: 0.009em;
+  }
+
+  .input-container {
+    max-width: 281px;
+
+    font-size: 15px;
+    line-height: 1.1em;
+  }
+
+  p.legal-info {
+    max-width: 280px;
+    text-align: justify;
+  }
 }

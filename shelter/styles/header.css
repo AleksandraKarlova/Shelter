@@ -69,3 +69,142 @@ h1 {
   background: var(--color-primary);
   z-index: 2;
 }
+
+.burger-menu {
+  display: none;
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 0;
+}
+
+.burger-line-first {
+  top: 0;
+}
+
+.burger-line-second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-line-third {
+  bottom: 0;
+}
+
+.burger-menu-pets {
+  display: none;
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.burger-pets-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+}
+
+.burger-pets-line-first {
+  top: 0;
+}
+
+.burger-pets-line-second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-pets-line-third {
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    position: absolute;
+  }
+
+  .header-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .burger-menu-pets {
+    display: block;
+  }
+
+  .nav {
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--color-dark-3xl);
+    z-index: 15;
+    transform: translateX(100%);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 248px 38px 0;
+  }
+
+  .nav-link {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1,6em;
+    color: var(--color-dark-s);
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .burger-menu-close {
+    width: 22px;
+    height: 30px;
+    position: absolute;
+    z-index: 20;
+    right: 20px;
+    top: 45px;
+  }
+
+  .burger-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+  }
+
+  .burger-close-line-first {
+    left: -50%;
+  }
+
+  .burger-close-line-third {
+    right: 100%;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .header-container {
+    padding: 0 10px;
+  }
+}
