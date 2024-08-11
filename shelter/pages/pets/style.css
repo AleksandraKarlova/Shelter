@@ -76,5 +76,14 @@ h1 {
 }
 
 @media screen and (max-width: 320px) {
+  .container-title {
+    margin-bottom: 12px;
 
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .pets-container {
+    padding-top: 42px;
+  }
 }
