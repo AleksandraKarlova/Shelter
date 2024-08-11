@@ -78,8 +78,13 @@ h1 {
 
 }
 
+img.about-content {
+  max-width: 300px;
+  max-height: 408px;
+}
+
 div.about-content {
-  width: 430px;
+  max-width: 430px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -96,7 +101,7 @@ h2 {
 }
 
 .about-content h2 {
-  width: 370px;
+  max-width: 370px;
 }
 
 .about-content p {
@@ -191,15 +196,20 @@ h2 {
   padding: 80px 142px 100px;
 }
 
+.donation-img {
+  max-width: 505px;
+  max-height: 261px;
+}
+
 .donation-content {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  max-width: 380px;
   gap: 20px;
 }
 
 .donation-content h2 {
-  width: 300px;
+  max-width: 300px;
 }
 
 .bank-info {
@@ -227,7 +237,7 @@ h2 {
 
   border-radius: 9px;
   padding: 10px 15px;
-  width: 349px;
+  max-width: 349px;
   white-space: nowrap;
 
   background: var(--color-primary);
@@ -302,5 +312,88 @@ h2 {
 }
 
 @media screen and (max-width: 320px) {
-  
+  .start-section-container {
+    max-width: 823px;
+    gap: 105px;
+  }
+
+  .start-section-content {
+    align-items: center;
+  }
+
+  .start-section-content h2 {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .start-section-content p {
+    text-align: center;
+  }
+
+  .about-container {
+    padding: 42px 0;
+  }
+
+  .about-content p {
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .help-container {
+    padding: 42px 5px;
+  }
+
+  .help-items-list {
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: space-between;
+  }
+
+  .help-item {
+    width: 130px;
+  }
+
+  .help-item p {
+    font-size: 15px;
+    line-height: 1.1em;
+    text-align: center;
+  }
+
+  .donation-container {
+    padding: 42px 10px;
+    gap: 42px;
+  }
+
+  .donation-content {
+    align-items: center;
+  }
+
+  .donation-img {
+    max-width: 260px;
+    max-height: 135px;
+  }
+
+  p.bank-info {
+    line-height: 1.6em;
+    white-space: nowrap;
+    letter-spacing: 0.009em;
+  }
+
+  .input-container {
+    max-width: 281px;
+
+    font-size: 15px;
+    line-height: 1.1em;
+  }
+
+  p.legal-info {
+    max-width: 280px;
+    text-align: justify;
+  }
 }
