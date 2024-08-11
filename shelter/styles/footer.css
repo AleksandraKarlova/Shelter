@@ -47,3 +47,30 @@ footer h2 {
 .address-container .footer-item {
   margin-top: 32px;
 }
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 30px;
+  }
+
+  footer h2 {
+    letter-spacing: 0.04em;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 65px;
+    justify-content: center;
+  }
+
+  .questions-container {
+    width: 278px;
+  }
+
+  .address-container {
+    width: 302px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+}

@@ -69,3 +69,25 @@ h1 {
   background: var(--color-primary);
   z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    position: absolute;
+  }
+
+  .header-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    position: absolute;
+  }
+
+  .header-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
