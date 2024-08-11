@@ -27,7 +27,7 @@ h1 {
 .start-section-container {
   display: flex;
   justify-content: space-between;
-  min-height: 908px;
+  max-height: 908px;
 }
 
 .start-section-container img {
@@ -154,7 +154,7 @@ h2 {
 
 #help h2 {
   text-align: center;
-  width: 310px;
+  max-width: 310px;
 }
 
 .help-items-list {
@@ -258,8 +258,8 @@ h2 {
   .start-section-container {
     flex-direction: column;
     align-items: center;
-    max-height: 1165px;
     gap: 100px;
+    max-height: 1165px;
   }
 
   .start-section-container img {
@@ -317,8 +317,13 @@ h2 {
 
 @media screen and (max-width: 320px) {
   .start-section-container {
-    max-width: 823px;
     gap: 105px;
+    justify-content: unset;
+    max-height: 823px;
+  }
+
+  .start-section-container img {
+    max-width: 260px;
   }
 
   .start-section-content {
@@ -336,11 +341,25 @@ h2 {
   }
 
   .about-container {
-    padding: 42px 0;
+    padding: 42px 15px;
+    justify-content: unset;
+    gap: 42px;
+  }
+
+  div.about-content {
+    gap: 22px;
+  }
+
+  img.about-content {
+    max-width: 260px;
   }
 
   .about-content p {
     text-align: justify;
+  }
+
+  .pets-container {
+    padding: 42px 0;
   }
 
   h2 {
@@ -351,6 +370,11 @@ h2 {
 
   .help-container {
     padding: 42px 5px;
+    gap: 42px;
+  }
+
+  #help h2 {
+    max-width: 222px;
   }
 
   .help-items-list {
@@ -360,13 +384,19 @@ h2 {
   }
 
   .help-item {
-    width: 130px;
+    max-width: 130px;
+  }
+
+  .help-item img {
+    max-width: 50px;
+    max-height: 50px;
   }
 
   .help-item p {
     font-size: 15px;
     line-height: 1.1em;
     text-align: center;
+    margin-block-start: 13px;
   }
 
   .donation-container {
