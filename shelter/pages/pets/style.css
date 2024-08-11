@@ -70,6 +70,10 @@ h1 {
     justify-content: center;
   }
 
+  .pet-card:nth-child(n + 7) {
+    display: none;
+  }
+
   .pagination {
     padding-top: 10px;
   }
@@ -84,6 +88,15 @@ h1 {
   }
 
   .pets-container {
+    margin-right: 0px;
     padding-top: 42px;
+  }
+
+  .pet-card:nth-child(n + 4) {
+    display: none;
+  }
+
+  .pagination {
+    gap: 10px;
   }
 }

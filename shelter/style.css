@@ -27,7 +27,7 @@ h1 {
 .start-section-container {
   display: flex;
   justify-content: space-between;
-  max-height: 908px;
+  min-height: 908px;
 }
 
 .start-section-container img {
@@ -137,6 +137,10 @@ h2 {
 
 .pets-carousel button {
   flex-shrink: 0;
+}
+
+.carousel-content {
+  overflow: hidden;
 }
 
 .carousel-track {
@@ -259,6 +263,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 100px;
+    min-height: unset;
     max-height: 1165px;
   }
 
@@ -283,7 +288,6 @@ h2 {
 
   .carousel-content {
     width: 580px;
-    overflow: hidden;
   }
 
   .carousel-track {
@@ -360,6 +364,30 @@ h2 {
 
   .pets-container {
     padding: 42px 0;
+    gap: 42px;
+  }
+
+  .pets-carousel {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .pets-carousel button:first-of-type {
+    margin-right: 30px;
+    order: 1;
+  }
+
+  .pets-carousel button:last-of-type {
+    margin-left: 30px;
+    order: 2;
+  }
+
+
+
+  .carousel-content {
+    width: 270px;
+    order: 0;
   }
 
   h2 {
