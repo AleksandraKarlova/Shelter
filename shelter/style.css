@@ -273,7 +273,7 @@ h2 {
 
   .about-container {
     flex-direction: column-reverse;
-    padding: 80px 165px 100px;
+    padding: 80px 135px 100px 126px;
     gap: 80px;
   }
 
