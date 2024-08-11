@@ -66,10 +66,12 @@ footer h2 {
 
   .questions-container {
     width: 278px;
+    padding-top: 0;
   }
 
   .address-container {
     width: 302px;
+    padding-top: 0;
   }
 }
 
