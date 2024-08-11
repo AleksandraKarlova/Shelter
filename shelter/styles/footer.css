@@ -80,6 +80,7 @@ footer h2 {
     font-size: 25px;
     line-height: 1.3em;
     letter-spacing: 0.04em;
+    align-self: center;
     text-align: center;
   }
 
