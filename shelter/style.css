@@ -22,7 +22,6 @@ h1 {
 .start-section {
   background: url("assets/images/start-screen-gradient-background.jpg");
   background-size: cover;
-  justify-content: space-between;
 }
 
 .start-section-container {
@@ -192,6 +191,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   padding: 80px 142px 100px;
 }
@@ -306,8 +306,12 @@ h2 {
 
   .donation-container {
     flex-direction: column-reverse;
-    padding: 80px 154px 100px;
+    padding: 80px 92px 100px 101px;
     gap: 60px;
+  }
+
+  .donation-content {
+    padding-left: 5px;
   }
 }
 

@@ -53,3 +53,28 @@ h1 {
   display: flex;
   gap: 20px;
 }
+
+@media screen and (max-width: 768px) {
+ .main {
+    padding-bottom: 76px;
+  }
+
+  .pets-container {
+    margin-right: -10px;
+    gap: 30px;
+  }
+
+  .pets-list {
+    row-gap: 30px;
+    column-gap: 40px;
+    justify-content: center;
+  }
+
+  .pagination {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+}
