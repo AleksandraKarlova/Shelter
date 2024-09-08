@@ -21,6 +21,7 @@
       burgerMenu.classList.remove('nav_active');
       body.classList.remove('body-menu-active');
   }
+}
 )
 
 
