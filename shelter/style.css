@@ -15,6 +15,11 @@ h1 {
   overflow: hidden;
 }
 
+.body-menu-active .overlay {
+  display: block;
+  opacity: 1;
+}
+
 .nav-link {
   color: var(--color-dark-s);
 }
@@ -145,6 +150,7 @@ h2 {
 
 .carousel-content {
   overflow: hidden;
+  display: flex;
 }
 
 .carousel-track {
