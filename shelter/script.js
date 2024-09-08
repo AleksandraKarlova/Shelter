@@ -17,7 +17,9 @@
   //не работает клик вне бургера и срабатывает ложный клик по нав листу сверху
   burgerMenu.addEventListener('click', (event) => {
     console.log(event.target);
-    if (!event.target.classList.contains('nav')) burgerMenu.classList.remove('nav_active');
+    if (!event.target.classList.contains('nav')) {
+      burgerMenu.classList.remove('nav_active');
+      body.classList.remove('body-menu-active');
   }
 )
 
