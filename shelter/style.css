@@ -1,4 +1,4 @@
-.header {
+ .header {
   background: url("assets/images/start-screen-gradient-background.jpg"); 
   background-size: cover;
 }
@@ -9,6 +9,10 @@ h1 {
 
 .logo h3 {
   color: var(--color-light-xl);
+}
+
+.body-menu-active {
+  overflow: hidden;
 }
 
 .nav-link {
@@ -203,6 +207,7 @@ h2 {
 .donation-img {
   max-width: 505px;
   max-height: 261px;
+  width: 100%;
 }
 
 .donation-content {
@@ -310,12 +315,18 @@ h2 {
 
   .donation-container {
     flex-direction: column-reverse;
-    padding: 80px 92px 100px 101px;
+    align-items: center;
+    padding: 80px clamp(0.625rem, -3.0357rem + 18.3036vw, 5.75rem) 100px clamp(0.625rem, -3.4379rem + 20.3143vw, 6.313rem);
     gap: 60px;
+
   }
 
   .donation-content {
     padding-left: 5px;
+  }
+
+  .input-container {
+    font-size: clamp(0.9375rem, 0.7143rem + 1.1161vw, 1.25rem);
   }
 }
 
