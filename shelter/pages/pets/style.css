@@ -10,6 +10,10 @@ h1 {
   color: var(--color-dark-3xl);
 }
 
+.body-menu-active {
+  overflow: hidden;
+}
+
 .nav-link {
   color: var(--color-dark-l);
 }
@@ -76,6 +80,16 @@ h1 {
 
   .pagination {
     padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-link {
+    color: var(--color-dark-s);
+  }
+
+  .nav-link-active, .nav-link:hover {
+    color: var(--color-light-s);
   }
 }
 

@@ -157,6 +157,12 @@ h1 {
     background-color: var(--color-dark-3xl);
     z-index: 15;
     transform: translateX(100%);
+    transition: 0.2s all linear;
+  }
+
+  .nav_active {
+    transform: translateX(0);
+    box-shadow: 0px 0px 0px 9999px rgba(41, 41, 41, 0.6);
   }
 
   .nav-list {

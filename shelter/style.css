@@ -1,4 +1,4 @@
-.header {
+ .header {
   background: url("assets/images/start-screen-gradient-background.jpg"); 
   background-size: cover;
 }
@@ -9,6 +9,10 @@ h1 {
 
 .logo h3 {
   color: var(--color-light-xl);
+}
+
+.body-menu-active {
+  overflow: hidden;
 }
 
 .nav-link {
