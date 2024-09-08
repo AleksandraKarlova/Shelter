@@ -150,6 +150,7 @@ h2 {
 
 .carousel-content {
   overflow: hidden;
+  display: flex;
 }
 
 .carousel-track {

@@ -75,14 +75,14 @@
           <div class="pets-container">
             <h2 class="section-title">Our friends who <br> are looking for a house</h2>
             <div class="pets-carousel">
-              <button type="button" class="button-round button-outlined" aria-label="cerousel left button">
+              <button type="button" class="button-round button-outlined button-left" aria-label="cerousel left button" disabled>
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="currentColor" />
                 </svg>
               </button>
               <div class="carousel-content">
                 <div class="carousel-track">
-                  <div class="pet-card">
+                  <!-- <div class="pet-card">
                     <img src="assets/images/pets-katrine.png" alt="katrine">
                     <p>Katrine</p>
                     <button type="button" class="button button-outlined">Learn more</button>
@@ -96,10 +96,10 @@
                     <img src="assets/images/pets-woody.png" alt="woody">
                     <p>Woody</p>
                     <button type="button" class="button button-outlined">Learn more</button>
-                  </div>
+                  </div> -->
                 </div>
               </div>
-              <button type="button" class="button-round button-outlined" aria-label="cerousel right button">
+              <button type="button" class="button-round button-outlined button-right" aria-label="cerousel right button">
                 <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="currentColor" />
                 </svg>
@@ -203,6 +203,7 @@
   </footer>
 
   <script src="./scripts/burger-menu.js"></script>
+  <script type="module" src="./scripts/carousel.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
