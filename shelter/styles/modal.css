@@ -1,15 +1,23 @@
 .modal-wrapper {
-  display: none;
-  position: absolute;
-  inset: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.modal-wrapper_active {
+  width: 100vw;
+  height: 100vh;
 }
 
 .modal-wrapper::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(41, 41, 41, 0.6);
+  background-color: var(--overlay-background);
 }
 
 .modal {
@@ -17,10 +25,18 @@
   top: 50%;
   left: 50%;
   z-index: 20;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   display: flex;
   border-radius: 9px;
   background-color: var(--color-light-s);
+  opacity: 0;
+
+  transition: all 0.25s ease;
+}
+
+.modal_active {
+  transform: translate(-50%, -50%);
+  opacity: 1;
 }
 
 .modal-img {
@@ -66,15 +82,15 @@
 
 .modal-list-item {
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 15px;
   line-height: 110%;
   letter-spacing: 0.06em;
   color: #000;
 }
 
-.modal-list-label {
-  font-weight: 700;
+.modal-list-content {
+  font-weight: 400;
 }
 
 .modal-button {
@@ -83,6 +99,10 @@
   right: 0;
   z-index: 2;
   transform: translate(90%, -100%);
+}
+
+.modal-button svg {
+  pointer-events: none;
 }
 
 @media screen and (max-width: 768px) {
