@@ -62,7 +62,9 @@ function fillModalContent(name = 'Jennifer') {
 
 function getRelativePath(src) {
   const pathname = window.location.pathname;
-  return pathname === '/' ? src : `../../${src}`;
+  const pagePathRegExp = /\/pages\/[^\/]+\/index\.html$/;
+  
+  return pagePathRegExp.test(pathname) ? `../../${src}` : src;
 }
 
 
