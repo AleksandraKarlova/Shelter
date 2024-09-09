@@ -28,6 +28,8 @@
 	--color-primary-light: #fddcc4;
 	--start-screen-gradient-background: #211f20;
 	--footer-gradient-background: #211f20;
+
+  --overlay-background: rgba(41, 41, 41, 0.6);
 }
 
 html {
@@ -58,6 +60,10 @@ body {
 a {
   text-decoration: none;
   color: unset;
+}
+
+.stopScroll {
+  overflow: hidden;
 }
 
 .container {
